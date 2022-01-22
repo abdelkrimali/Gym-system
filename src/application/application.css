@@ -1,0 +1,171 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+  /*Start Login Page */
+  
+#cover{
+	
+}
+
+#txt
+{
+	/*-fx-background-color: #4dabde;*/
+	-fx-background-color:#F2F2F2;
+	-fx-text-fill: #000;
+	-fx-prompt-text-fill: #000;
+	-fx-background-radius: 22;
+	-fx-border-color: #2196F3;
+	-fx-border-radius: 23;
+	
+}
+#btn
+{
+	-fx-font-weight:bold;
+	-fx-background-color: #2196F3;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-text-fill: white;
+}
+#btn:hover
+{
+	-fx-font-weight:bold;
+	-fx-background-color: white;
+	-fx-background-radius: 22;
+	-fx-border-color:#2196F3;
+	-fx-font-size: 16;
+	-fx-text-fill: #2196F3;
+	-fx-border-radius: 20;
+	-fx-border-width: 3;
+}
+#btn:pressed
+{
+	-fx-font-weight:bold;
+	-fx-background-color: white;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-text-fill: #2196F3;
+	-fx-border-color:#2196F3;
+	-fx-border-radius: 20;
+	-fx-border-width: 3;
+	-fx-rotate: 10;
+}
+#button
+{
+	-fx-font-weight:bold;
+	-fx-background-color: #2196F3;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-text-fill: white;
+}
+   /*End Login Page */
+
+/* Start Main Page */ 
+
+	/* ---------------------Start TabPane Style ---------------------------*/
+	
+	
+.tab
+{
+	-fx-pref-width: 200;
+	-fx-pref-height:32;
+	/*-fx-background-color:   #39A67F;*/
+	-fx-background-color:   #F00;
+	
+}
+.tab .tab-label
+{
+	-fx-background-color: transparent ;
+	-fx-text-fill:#FFF;
+	
+}
+.tab-header-background
+{
+	-fx-background-color:   #F00;
+	
+	
+}
+#tabuser
+{
+    -fx-background-color:   #F00;
+}
+	/* ---------------------End TabPane Style ---------------------------*/
+	
+	
+	/* ---------------------Start Menu Bar Style ---------------------------*/
+	
+.menu-bar
+{
+	-fx-base: #39A67F;
+	-fx-background-color: #39A67F;
+	
+}
+
+.context-menu
+{
+	-fx-background-color: derive( #39A67F,30%);
+}
+	
+	
+	/* ---------------------End Menu Bar Style ---------------------------*/
+
+
+
+/* Start Main Page 
+.table-view .column-header .label {
+    -fx-text-fill : #949494;
+    -fx-padding : 16 0 16 0 ;
+}
+
+
+
+.table-view:focused
+{
+	-fx-background-color: #67ef77 ;
+}*/
+.table-view{
+   
+}
+.table-view:focused .table-row-cell:selected {
+    -fx-background-color: #019312  ;
+   
+}
+
+.table-view:focused .table-row-cell:selected .table-cell{
+    -fx-text-fill: white;
+   
+}
+
+
+.table-view .column-header ,
+.table-view .column-header-background,
+.table-view .column-header-background .filler{
+    -fx-background-color:#CCC;
+}
+.table-view .column-header{
+    -fx-border-width : 0 1 0 1;
+    -fx-border-color: #F3F3F3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

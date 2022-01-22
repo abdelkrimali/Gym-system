@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="618.0" minWidth="911.0" prefHeight="618.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Pane minWidth="911.0" prefHeight="48.0" prefWidth="911.0" style="-fx-background-color: f00;">
+         <children>
+            <Label alignment="CENTER" layoutX="637.0" layoutY="11.0" prefHeight="27.0" prefWidth="243.0" text="الصفحة الرئيسية" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="103.0" prefHeight="463.0" prefWidth="873.0" style="-fx-border-color: F00;">
+         <children>
+            <Label layoutX="50.0" layoutY="43.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: #cc3131;" text="Informations :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Pane layoutX="50.0" layoutY="68.0" prefHeight="209.0" prefWidth="216.0" style="-fx-border-color: #00F;">
+               <children>
+                  <ImageView fx:id="image" fitHeight="201.0" fitWidth="209.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <TextField fx:id="txtbarcode" alignment="CENTER" layoutX="323.0" layoutY="28.0" onKeyPressed="#afficher_detaill" prefHeight="25.0" prefWidth="313.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="jrrestant" layoutX="479.0" layoutY="245.0" prefHeight="26.0" prefWidth="175.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="nbseance" layoutX="472.0" layoutY="173.0" prefHeight="26.0" prefWidth="183.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="286.0" layoutY="246.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: #cc3131;" text="Date-Fin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="286.0" layoutY="174.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: #cc3131;" text="Date-Debut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="nometprenom" layoutX="466.0" layoutY="101.0" prefHeight="26.0" prefWidth="271.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="286.0" layoutY="102.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: #cc3131;" text="Nom et Prenom" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Pane layoutX="651.0" layoutY="59.0" prefHeight="111.0" prefWidth="199.0" style="-fx-background-color: #333;">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="63.0" layoutX="20.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/star.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="16.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الأعضاء الجدد" textAlignment="CENTER" wrappingWidth="142.537109375">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblnew" alignment="CENTER_RIGHT" layoutX="99.0" layoutY="8.0" prefHeight="69.0" prefWidth="89.0" textFill="#d7d0d0">
+                     <font>
+                        <Font size="47.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="651.0" layoutY="260.0" prefHeight="111.0" prefWidth="199.0" style="-fx-background-color: #333;">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="63.0" layoutX="20.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/money.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="10.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="انتهاء الاشتراك" textAlignment="CENTER" wrappingWidth="142.537109375">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblfin" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="8.0" prefHeight="69.0" prefWidth="98.0" textFill="WHITE">
+                     <font>
+                        <Font size="47.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p" layoutX="29.0" layoutY="393.0" prefHeight="59.0" prefWidth="799.0" />
+            <Label layoutX="286.0" layoutY="302.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: #cc3131;" text="Jour-Restants" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbljr" layoutX="476.0" layoutY="302.0" prefHeight="26.0" prefWidth="175.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

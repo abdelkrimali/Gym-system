@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="731.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.CarteController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="-4.0" prefHeight="66.0" prefWidth="882.0" style="-fx-background-color: #F00;" text="اتشاء البطاقات" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </Label>
+      <Label layoutX="28.0" layoutY="206.0" prefHeight="36.0" prefWidth="182.0" text="Nom ">
+         <font>
+            <Font name="SansSerif Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="312.0" prefHeight="36.0" prefWidth="182.0" text="Prenom">
+         <font>
+            <Font name="SansSerif Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnom" layoutX="303.0" layoutY="206.0" prefHeight="36.0" prefWidth="373.0" />
+      <TextField fx:id="txtprenom" layoutX="305.0" layoutY="312.0" prefHeight="36.0" prefWidth="398.0" />
+      <Label layoutX="677.0" layoutY="98.0" prefHeight="36.0" prefWidth="182.0" text="رقم التسجيل">
+         <font>
+            <Font name="SansSerif Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtid" alignment="CENTER" editable="false" layoutX="411.0" layoutY="103.0" prefHeight="36.0" prefWidth="214.0" />
+      <JFXButton layoutX="289.0" layoutY="398.0" onAction="#create_carte" prefHeight="51.0" prefWidth="337.0" style="-fx-background-color: #00F;" text="انشاء البطاقة" textFill="#fdf6f6">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

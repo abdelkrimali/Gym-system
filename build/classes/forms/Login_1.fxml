@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="591.0" prefWidth="851.0">
+         <children>
+            <ImageView fitHeight="611.0" fitWidth="850.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/log.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="195.0" layoutY="135.0" opacity="0.84" prefHeight="329.0" prefWidth="463.0" style="-fx-background-color: #FFF;">
+               <children>
+                  <JFXButton layoutX="150.0" layoutY="263.0" onAction="#loginn" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #F00;" text="دخول" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="134.0" layoutY="14.0" prefHeight="48.0" prefWidth="196.0" text="Salle De  Sport " textFill="#f50000">
+                     <font>
+                        <Font name="Traditional Arabic Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtuser" alignment="CENTER" layoutX="83.0" layoutY="95.0" prefHeight="48.0" prefWidth="299.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="txtpassword" alignment="CENTER" layoutX="82.0" layoutY="171.0" prefHeight="40.0" prefWidth="299.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </PasswordField>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="94.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/userlogin.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="94.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Lock.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="804.0" layoutY="6.0" onMouseClicked="#close" prefHeight="39.0" prefWidth="41.0" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
